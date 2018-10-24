@@ -58,7 +58,7 @@ public class TodoActivity extends AppCompatActivity {
                 */
 
                 mTodoIndex += 1;
-                mTodoIndex = (mTodoIndex + 1) % todos.length;
+                mTodoIndex = (mTodoIndex + 1) % mTodos.length;
             }
         });
     }
