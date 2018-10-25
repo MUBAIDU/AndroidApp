@@ -83,7 +83,7 @@ public class TodoActivity extends AppCompatActivity {
                 //i.e. mTodoIndex = (mTodoIndex + 1) % todos.length;
                 */
 
-                mTodoIndex += 1;
+                mTodoIndex =(mTodoIndex + 1 ) % mTodos.length;
                 TodoTextView.setText(mTodos[mTodoIndex]);
             }
         });
