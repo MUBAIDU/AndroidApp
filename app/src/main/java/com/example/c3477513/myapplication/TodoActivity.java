@@ -64,15 +64,20 @@ public class TodoActivity extends AppCompatActivity {
         TodoTextView.setText(mTodos[mTodoIndex]);
 
 
+
+
+
+
+
+
+
         Button buttonNext;
         buttonNext = (Button) findViewById(R.id.buttonNext);
-
 
         // OnClick is listener for the  Next button
         buttonNext.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
                 /* !!!! BUG !!!!!!!
                 Compile time error because  mTodoIndexx is misspelled
                 Runtime Error: no check for maximum number of items in todos array
@@ -82,10 +87,30 @@ public class TodoActivity extends AppCompatActivity {
                 // Bug fix run time error, use the remainder as index to the array,
                 //i.e. mTodoIndex = (mTodoIndex + 1) % todos.length;
                 */
-
                 mTodoIndex =(mTodoIndex + 1 ) % mTodos.length;
                 TodoTextView.setText(mTodos[mTodoIndex]);
             }
         });
+
+        Button buttonPrev;
+        buttonPrev = (Button) findViewById(R.id.buttonPrev);
+
+        // OnClick is listener for the  Next button
+        buttonPrev.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // (mTodoIndex -1) allows the Prev button to go
+                // backwards within the the Todo list
+
+                mTodoIndex =(mTodoIndex - 1 ) % mTodos.length;
+                TodoTextView.setText(mTodos[mTodoIndex]);
+            }
+        });
+
+
+
+
+
+
     }
 }
