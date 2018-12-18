@@ -56,7 +56,6 @@ public class TodoActivity extends AppCompatActivity {
             mTodoIndex = savedInstanceState.getInt(TODO_INDEX, 0);
 
 
-
         }
         // initialize member TextView so that we can manipulate it later
         final TextView textViewTodo;
@@ -66,7 +65,6 @@ public class TodoActivity extends AppCompatActivity {
 
         // it reads the todo array from res/values/strings.xml file
         // where the string code is located
-
         /*
         TODO: Refactor to data layer
          */
@@ -96,6 +94,9 @@ public class TodoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // (mTodoIndex -1) allows the Prev button to go
                 // backwards within the the Todo list
+
+                // if its first element [0] the set index to last [.length
+                mTodoIndex = (mTodoIndex == 0) ? mTodos.length-1 :mTodoIndex -1;
                 textViewTodo.setText(mTodos[mTodoIndex]);
                 setTextViewComplete("");
             }
