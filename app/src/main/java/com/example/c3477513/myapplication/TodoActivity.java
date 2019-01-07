@@ -20,7 +20,7 @@ public class TodoActivity extends AppCompatActivity {
     public static final String TAG = "TodoActivity";
 
     // name, pair value to be returned in an intent
-    private static final String IS_TODO_COMPLETE = "COM.example.isTodoComplete";
+    private static final String IS_TODO_COMPLETE = "com.example.isTodoComplete";
 
 
     //Small amounts of data, typically IDs can be stored as key,
