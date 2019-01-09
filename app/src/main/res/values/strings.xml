@@ -14,18 +14,25 @@
 
     <string-array name="todo">
         <item>Wake up</item>
+        <item>Go jogging</item>
         <item>Drink Coffee</item>
         <item>Make at least one person laugh</item>
         <item>Plant a tree</item>
+        <item>Eat your 5 a day fruits</item>
+        <item>Play football</item>
         <item>Go to sleep</item>
+
     </string-array>
 
     <string-array name="todo_detail">
         <item>Wake up is generally not a pleasant activity but it does happen once a day!</item>
+        <item>Jogging helps improve stamina and burn unwanted calories!</item>
         <item>Caffeine consumption is not a todo, it happens naturally.  </item>
         <item>Follow up the RFC for humour and JokeML</item>
-        <item>Today, I planted 2 trees, really! see here: https://www.ecosia.org/</item>
-        <item>At least 6 hours is compulsory; drink milky coffee. </item>
+        <item>Today, I planted 2 trees, really! see here: https://www.plant-tree.org/</item>
+        <item>Eat your 5 a day fruits to stay strong and healthy/</item>
+        <item>Play football to keep fit and healthy </item>
+        <item>At least 7 hours is compulsory; drink milky coffee. </item>
     </string-array>
 
 </resources>

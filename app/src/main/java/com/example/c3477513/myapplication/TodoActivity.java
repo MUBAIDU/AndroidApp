@@ -46,6 +46,8 @@ public class TodoActivity extends AppCompatActivity {
 
         Log.d(TAG, " **** Just to say the PC is in onCreate!");
 
+
+
         // sets user interface layout for this Activity
         // the layout file is in the project res/layout/activity_todo.xml file
         setContentView(R.layout.activity_todo);
