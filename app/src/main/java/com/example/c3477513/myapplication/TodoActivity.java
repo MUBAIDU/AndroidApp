@@ -20,7 +20,7 @@ public class TodoActivity extends AppCompatActivity {
     public static final String TAG = "TodoActivity";
 
     // name, pair value to be returned in an intent
-    private static final String IS_TODO_COMPLETE = "COM.example.isTodoComplete";
+    private static final String IS_TODO_COMPLETE = "com.example.isTodoComplete";
 
 
     //Small amounts of data, typically IDs can be stored as key,
@@ -29,6 +29,7 @@ public class TodoActivity extends AppCompatActivity {
     // which can be in scope in all
     // Activity states and more suitable for larger amounts of data
     private static final String TODO_INDEX = "com.example.todoIndex";
+
 
     // override to write the value of mTodoIndex into the Bundle
     // with TODO_INDEX as its key
@@ -40,26 +41,31 @@ public class TodoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+     //////// on create basically initializes your activity /////////
+
         // calls the super class onCreate to complete the creation
         // of  the activity like view hierarchy
         super.onCreate(savedInstanceState);
-
         Log.d(TAG, " **** Just to say the PC is in onCreate!");
 
 
-
-        // sets user interface layout for this Activity
-        // the layout file is in the project res/layout/activity_todo.xml file
+       ///// sets user interface layout for this Activity , basically defines your UI//////
+        // The layout file is in the project res/layout/activity_todo.xml file
+     //////// findViewById(int) this piece of code job is to retrieve the widgets in that UI that you need to interact with the program ////////
         setContentView(R.layout.activity_todo);
+
 
         // check for saved state due to changes such as rotation or back button
         // and restore any saved state such as the todo index
         if (savedInstanceState != null) {
             mTodoIndex = savedInstanceState.getInt(TODO_INDEX, 0);
-
-
         }
-        // initialize member TextView so that we can manipulate it later
+
+
+
+
+
+        // initializes member TextView so that we can manipulate it later
         final TextView textViewTodo;
         textViewTodo = (TextView) findViewById(R.id.textViewTodo);
         setTextViewComplete("");
@@ -147,10 +153,8 @@ public class TodoActivity extends AppCompatActivity {
 
     }
     private void updateTodoComplete(boolean is_todo_complete) {
-
         final TextView textViewTodo;
         textViewTodo = (TextView) findViewById(R.id.textViewTodo);
-
         if (is_todo_complete) {
             textViewTodo.setBackgroundColor(
                     ContextCompat.getColor(this, R.color.backgroundSuccess));

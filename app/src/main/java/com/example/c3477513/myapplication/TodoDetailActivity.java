@@ -55,6 +55,7 @@ public class TodoDetailActivity extends AppCompatActivity {
 
         if (savedInstanceState != null){
             mTodoIndex = savedInstanceState.getInt(TODO_INDEX, 0);
+
         }
 
         // initialize member TextView so we can manipulate it later
