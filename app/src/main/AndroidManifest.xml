@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.c3477513.myapplication">
+///// Android manifest is a root directory
+    where all the vital information is held about the program for example the Activity class
 
     <application
         android:allowBackup="true"

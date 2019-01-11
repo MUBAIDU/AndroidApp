@@ -42,11 +42,6 @@ public class TodoDetailActivity extends AppCompatActivity {
         savedInstanceState.putInt(TODO_INDEX, mTodoIndex);
     }
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

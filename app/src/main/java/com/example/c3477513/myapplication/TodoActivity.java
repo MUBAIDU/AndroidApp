@@ -19,6 +19,12 @@ public class TodoActivity extends AppCompatActivity {
 
     public static final String TAG = "TodoActivity";
 
+
+
+
+
+
+
     // name, pair value to be returned in an intent
     private static final String IS_TODO_COMPLETE = "com.example.isTodoComplete";
 
@@ -31,7 +37,7 @@ public class TodoActivity extends AppCompatActivity {
     private static final String TODO_INDEX = "com.example.todoIndex";
 
 
-    // override to write the value of mTodoIndex into the Bundle
+   /////// // override to write the value of mTodoIndex into the Bundle////////////
     // with TODO_INDEX as its key
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -109,7 +115,7 @@ public class TodoActivity extends AppCompatActivity {
                 setTextViewComplete("");
             }
         });
-        // LAB 2 CODE BEGINS BELOW
+        ////////////// LAB 2 CODE BEGINS BELOW //////////////////
         Button buttonTodoDetail;
         buttonTodoDetail = (Button) findViewById(R.id.buttonTodoDetail);
         buttonTodoDetail.setOnClickListener(new View.OnClickListener() {
